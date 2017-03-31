@@ -1,14 +1,42 @@
 html, body {
-    height: 100%;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-    position: fixed;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
+
 #renderCanvas {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+}
+
+#ammoLabel, #score, #money{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  font-size: 2em;
+  font-family: Helvetica;
+}
+#score{
+  top: 60px;
+}
+
+#money{
+  top: 100px;
+}
+
+#gameover{
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  font-size: 3em;
+  text-align: center;
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+  display: none;
 }
